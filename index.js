@@ -13,5 +13,7 @@ let nombre1="Juana"
 console.log (nombre);console.log (nombre1)
 
 
-
+console.log('test'.split(1, 2)); // -> 'es'
+let str="java🎇script🎇language🎇evolutech"
+console.log(str.split('🎇')); // -> ['java', 'script', 'language']
 
