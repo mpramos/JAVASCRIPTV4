@@ -95,9 +95,6 @@ console.log(users);
 console.log(users[0].name);
 console.log(users[1].age);
 
-
-
-
 let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 let day = "Sunday";
 
@@ -177,8 +174,8 @@ let comidas2=['🍕','🍔','🍟']
 let frutaComida=frutas2.concat(comidas2)
 console.log(frutaComida);
     
-//LABORATORIO
-let contacts = [{
+LABORATORIO
+ let contacts = [{
     name: "Maxwell Wright",
     phone: "(0191) 719 6495",
     email: "Curabitur.egestas.nunc@nonummyac.co.uk"
@@ -191,8 +188,8 @@ let contacts = [{
     phone: "0800 1111",
     email: "libero@convallis.edu"
     }];
-
-   // Maisie Haley / 0913 531 3030 / risus.Quisque@urna.ca.
+ 
+//    Maisie Haley / 0913 531 3030 / risus.Quisque@urna.ca.
    contacts.push({name:"Maisie Haley",phone:"0913 531 3030",email:"risus.Quisque@urna.ca."})
    console.log(contacts);
    let primerContacto= contacts[0]
@@ -200,10 +197,6 @@ let contacts = [{
    console.log(primerContacto.name + ' / '+ ultimoContacto.name);
    console.log(primerContacto.email + ' / '+ ultimoContacto.email);
    console.log(primerContacto.phone + ' / '+ ultimoContacto.phone);
-
-
-    
-
 
 
 
