@@ -5,3 +5,11 @@ Participacion de alumnos de las tareas =>
     Pablo 
     Luis
     Grover
+
+22/06/2023
+Exposicion => <Pablo Maguiña>
+
+22/07/2023
+Exposicion => <Pablo Maguiña> <Grover> <Miguel>
+Participaciones => Jimmy
+Colaboraciones=> Miguel
