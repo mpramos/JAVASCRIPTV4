@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* h1{
+    background-color: brown;
+  }
+  h2{
+    background-color: brown;
+  }
+  h3{
+    background-color: brown;
+  }
+  h4{
+    background-color: brown;
+} */
+    .titulos {
+        background-color: blue;
+    }
+
+    #titulo3 {
+        background-color: green;
+
+    }
+</style>
+
+<body>
+    <h1 class="titulos" id="titulo11">Hola a todos</h1>
+    <h1 class="titulos" id="titulo12">Hola a todos</h1>
+    <h1 class="titulos" id="titulo13">Hola a todos</h1>
+    <h1 class="titulos" id="titulo14">Hola a todos</h1>
+    <h2 class="subtitulo" id="titulo21">Hola a todos</h2>
+    <h2 class="subtitulo" id="titulo22">Hola a todos</h2>
+    <h2 class="subtitulo" id="titulo23">Hola a todos</h2>
+    <h3 class="titulos" id="titulo3">Hola a todos</h3>
+    <h4 class="titulos" id="titulo4">Hola a todos</h4>
+    <input type="number">
+    <button onclick="alert('Hola')">Enviar</button>
+</body>
+<script>
+   let titulos= document.getElementsByTagName('h1')
+   console.log(titulos)
+   console.log('# de elementos ',titulos.length);
+   for (let i = 0; i < titulos.length; i++) {
+       console.log(titulos[i]);    
+    }
+    let titulos_2= document.getElementsByClassName('subtitulo')
+    console.log('subtitulos ' ,titulos_2);
+    for (let i = 0; i < titulos_2.length; i++) {
+        console.log(titulos_2[i]);    
+    }
+    let titulos_3= document.getElementById('titulo3')
+    console.log(titulos_3);
+
+
+</script>
+</html>

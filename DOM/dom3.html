@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .titulo.encabezado{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo encabezado" id="primer-titulo">Primer Titulo</h1>
+    <h1 class="titulo" id="segundo-titulo">Segundo Titulo</h1>
+    <h1 class="titulo" id="tercer-titulo">Tercer Titulo</h1>
+    <h1></h1>
+    <h1></h1>
+    <script>
+        let titulos= document.querySelectorAll('h1')
+        titulos[3].className='titulo'
+        titulos[3].id='cuarto-titulo'
+        // titulos[3].classList.add('encabezado','segundoEncabeezado')
+        titulos[3].classList.remove('encabezado','segundoEncabeezado')
+        titulos[3].textContent='Cuarto Titulo'
+        titulos[4].setAttribute('class','titulo')        
+        titulos[4].setAttribute('id','quinto-titulo')
+        titulos[4].textContent='Quinto Titulo'
+        
+    </script>
+</body>
+</html>

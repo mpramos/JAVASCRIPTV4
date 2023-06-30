@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="titulo" id="primer-titulo">Primer Titulo</h1>
+    <h1 class="titulo" id="segundo-titulo">Segundo Titulo</h1>
+    <h1 class="titulo" id="tercer-titulo">Tercer Titulo</h1>
+    <h1></h1>
+    <script>
+        let titulo3=document.querySelector('#tercer-titulo')
+        console.log('tercer elemento h1 ',titulo3);
+        let titulosClase=document.querySelectorAll('.titulo')
+        console.log('primer elemento h1 ',titulosClase);
+        for (let i = 0; i < titulosClase.length; i++) {
+            console.log('titulo por clase ',titulosClase[i]);
+        }
+        let titulos=document.querySelectorAll('h1')
+        console.log(titulos);
+        for (let i = 0; i < titulos.length; i++) {
+            console.log(titulos[i]);
+        }
+    </script>
+</body>
+</html>

@@ -2,6 +2,7 @@
 //! FOR
 for (let numero = 0; numero <=5; numero++) { // 0 1...6
     console.log(numero);//0 1 5
+    
 }
 for (let numero = 0; numero <=5; numero++) {
     console.log(numero + '* '+numero + '= '+ numero *numero)
