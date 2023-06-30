@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <script>
+        let titulo=document.createElement('h1')
+        titulo.className='titulo'
+        titulo.style.backgroundColor='green'
+        titulo.style.fontSize='24px'
+        titulo.textContent='Creando un elemento h1 desde javascript'
+        console.log(titulo);
+        document.body.appendChild(titulo)
+        const ul=document.querySelector('ul')
+        const listas=document.querySelectorAll('li')
+        // for (const list of listas) {
+        //     ul.removeChild(list)
+        // }
+        // const ol=document.querySelector('ol')
+        // ol.innerHTML=''
+        ul.innerHTML=''
+    </script>
+</body>
+</html>

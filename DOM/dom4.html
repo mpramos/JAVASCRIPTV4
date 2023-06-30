@@ -6,6 +6,36 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <h1>Evolutech JavaScript</h1>
+        <h1>Evolutech JavaScript</h1>
+        <h1>Evolutech JavaScript</h1>
+        <h2>Con React</h2>
+        <ul>
+            <!--! Para eliminar 👇🏻 -->
+            <!-- <li>1</li>
+                <li>2</li>
+                <li>3</li> -->
+            </ul>
+        </div>
+        <script>
+            let listas=  `<li>Numero Uno</li>
+            <li>Numero Dos</li>
+            <li>Numero Tres</li> `
+            const ul=document.querySelector('ul')
+            ul.innerHTML=listas
+            <!--! Para eliminar 👇🏻 -->
+        // ul.innerHTML=''
+        const titulos=document.querySelectorAll('h1')
+        console.log(titulos);
+        titulos.forEach((titulo,i)=>{
+            titulo.style.fontSize='24px'
+            if(i % 2===0){
+                titulo.style.backgroundColor='green'
+            }else{
+                titulo.style.backgroundColor='blue'
+            }
+        })
+    </script>
 </body>
 </html>
