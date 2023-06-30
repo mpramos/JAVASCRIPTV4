@@ -15,6 +15,13 @@ for (let numero = 0; numero <=5; numero++) {
     }  
     console.log(numero)  
 }
+let personas=['👩🏻','👨🏻','👧🏻']
+
+// for (const persona of personas) {
+//     console.log(persona);
+// }
+console.log(personas.forEach(persona=>console.log(persona)));
+
 //?CONTINUE 
 for (let numero = 0; numero <=5; numero++) {
     if (numero==3) {
