@@ -105,13 +105,58 @@ console.log(string12.search('con'));
 //! repeat
 let string13='Evolutech'
 console.log(string13.repeat(10))
+//!Comprobacion de tipos de datos y conversion
 
+// Ejemplos
+typeof 4;      // "number"
+typeof NaN;     // "number" (Not a Number)
+typeof Infinity;   // "number"
+typeof "";       // "string"
+typeof [];       // "object" (Array is also an object in JS, but typeof returns it
+typeof {};       // "object"
+typeof function() {}    // "function"
+typeof undefined;        // "undefined"
+typeof null;             // "object", because of its special role as the absence of value
 
+//! Cambiar el tipo de datos (casting)
+//? Casting.- convertir un tipo de datos a otro tipo de datos
+parseInt
+parseFloat
+Number
++
+String
 
+//? Cadena a int
+let num= '10'
+// let num= 'abc'
+console.log(num);
+console.log(typeof num);
+const number1 = parseInt(num);
+console.log(number1);
+console.log(typeof number1);
+console.log(typeof num);
+const number2 = Number(num);
+console.log(number2);
+console.log(typeof number2);
+console.log(typeof num);
+let number3=+num
+console.log(typeof number3);
+console.log(number3);
+//? Cadena a flotante
+// parseFloat()
+// Number()
+// Signo(+)
 
+console.log(num1);
+console.log(typeof num1);
+const floatNum1 = parseFloat(num1);
+console.log(floatNum1);
+console.log(typeof floatNum1);
 
-
-
+let num1='9.81'
+let floatNum2= +num1
+console.log(floatNum2);
+console.log(typeof floatNum2);
 
 
 
