@@ -173,6 +173,22 @@ let frutas2=['🍋','🍊','🍓']
 let comidas2=['🍕','🍔','🍟']
 let frutaComida=frutas2.concat(comidas2)
 console.log(frutaComida);
+//Array.isArray
+const numeros=[1,2,3,4,5]
+const nombre='Maria'
+console.log(Array.isArray(numeros));
+console.log(Array.isArray(nombre));
+
+//? Unión de elementos de arreglo
+const numeros1=[1,2,3,4,5]
+console.log(numeros1.join());
+console.log(typeof numeros1.join());
+console.log(numeros1.join(''));
+console.log(numeros1.join(' '));
+console.log(numeros1.join(', '));
+console.log(numeros1.join(' 👩🏻'));
+
+
     
 LABORATORIO
  let contacts = [{
