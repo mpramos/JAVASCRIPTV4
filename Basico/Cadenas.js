@@ -57,6 +57,7 @@ let ultimoElemento =js[js.length-1]
 console.log(ultimoElemento);
 //? toUpperCase()
 let string1='javascript'
+let number=5
 console.log(string1.toUpperCase());
 //? toLowerCase()
 let string2='JAVASCRIPT'

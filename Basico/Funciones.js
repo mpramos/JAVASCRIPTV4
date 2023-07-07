@@ -48,6 +48,8 @@ console.log(`La suma de ${a} y ${b} es = ${división3}`);
 function suma(a,b) {
     return a+b
 }
+
+
 function resta(a,b) {
     return a-b
 }
@@ -66,4 +68,88 @@ function calculadora(a,b,operator) {
 
 }
 console.log(calculadora(5,5,'*'));
+
+//! Declaracion de funcion
+
+function getFullName() {
+       return  
+}
+getFullName()
+//! Funcion sin parametro y sin retorno
+function cuadrado() {
+    let numero=2
+    let cuadrado= numero*numero
+    console.log(cuadrado);
+}
+cuadrado()
+//! Funcion que devuelve un valor
+function imprimeNombreCompleto(){
+    let primerNombre='Oscar'
+    let segundoNombre='Alfredo'
+    let apellidoPaterno='Garcia'
+    let espacio=' '
+    let nombreCompleto=primerNombre + espacio + segundoNombre + espacio + apellidoPaterno
+    return nombreCompleto
+}
+console.log(imprimeNombreCompleto());
+
+//! Funciones con un parametro
+function areaDeCirculo(r) {
+    let area=Math.PI * r * r
+    return area
+}
+console.log(areaDeCirculo(10));
+//! Funciones con dos parametros
+function suma(a,b) {
+    return a+b
+}
+console.log(suma(2,3));
+
+//! Funciones con muchos parametros
+
+function sumaValores() {
+    let suma=0
+    for (let i = 0; i < arguments.length; i++) { //i=3++
+        suma=suma+arguments[i] //suma=0+1 suma=1+2; sum=3+3; sum=6+4;sum=10
+    }
+    return suma
+}
+console.log(sumaValores(1,2,3,4))
+console.log(sumaValores(1,2,3,4,5,6,7))
+
+
+//! Funcion anonima
+let cuadrado=function () {
+    console.log('Hola soy una funcion anonima');
+}
+cuadrado()
+
+//! Funcion de expresion
+let cuadrado=function (n) {
+   return n*n
+}
+console.log(cuadrado(2))
+
+//! Funcion de autoinvocacion
+
+(function (n) {
+    console.log(n*n);
+})(3)
+
+//! Funcion de flecha
+const cuadradoFlecha1=(n)=>{
+        console.log(n*n);
+}
+cuadradoFlecha1(2)
+const cuadradoFlecha2=n=>{
+        console.log(n*n);
+}
+cuadradoFlecha2(4)
+const cuadradoFlecha22=n=>{
+        return(n*n);
+}
+console.log(cuadradoFlecha22(4))
+const cuadradoFlecha3=n=>n*n
+console.log(cuadradoFlecha3(3))
+
 
