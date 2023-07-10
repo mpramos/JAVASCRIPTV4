@@ -152,4 +152,21 @@ console.log(cuadradoFlecha22(4))
 const cuadradoFlecha3=n=>n*n
 console.log(cuadradoFlecha3(3))
 
+//? Funciones con parametros por defecto
+function functionName(params=value) {
+    
+}
+functionName()
+functionName(args)
 
+
+function saludo(nombre='Ricardo') {
+    let mensaje=`${nombre} , Bienvenido a Evolutech 😀`
+    return mensaje
+}
+console.log(saludo());
+console.log(saludo('David'));
+
+const pesoObjeto=(masa,gravedad=9.81)=> masa*gravedad + 'N'
+console.log('El peso de un objeto en Newton es : ', pesoObjeto(100));
+console.log('El peso de un objeto en Newton es : ', pesoObjeto(100,1.62));
