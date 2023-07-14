@@ -15,12 +15,16 @@ let palabra='javascript'
 palabra[0]='k'
 console.log(palabra);
 
-//! Tipos de datos no promitivos
-let numeros=['😐',2,3] //ARREGLO
+//! Tipos de datos no primitivos
+const numeros=['😐',2,3] //ARREGLO
 console.log(numeros[0]);
 console.log(numeros[1]);
 numeros[0]='😎'
 console.log(numeros);
+numeros=['🍟']
+console.log(numeros);
+
+
 
 
 

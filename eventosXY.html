@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #contenedor {
+            width: 300px;
+            height: 200px;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <p></p>
+    </div>
+    <script>
+        let contenedor=document.getElementById('contenedor')
+        contenedor.addEventListener('mousemove', function(event) {
+            let offsetX=event.offsetX
+            let offsetY=event.offsetY
+            console.log('Posicion X : '+offsetX);
+            console.log('Posicion Y : '+offsetY);
+        })
+    </script>
+</body>
+</html>
