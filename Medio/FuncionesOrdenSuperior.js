@@ -59,3 +59,55 @@ console.log(suma);
 let numeros7 = [1,2,3,4,5,6,7];
 let pares = numeros7.filter(num=> num % 2===0)
 console.log(pares);
+//! every
+let names = ['Elias','Nicolas','Leonidas',1];
+const todosStrings=names.every((name)=> typeof name === 'string')
+console.log(todosStrings);
+//! find
+let edades=[24,22,25,32,35,10,18]
+const edad=edades.find((edad)=>edad < 20)
+console.log(edad);
+
+const notas=[
+    {nombre:'Elias', nota:5},
+    {nombre:'Nicolas', nota:80},
+    {nombre:'Leonidas', nota:50},
+    {nombre:'Mathias', nota:85},
+    {nombre:'Alejandra', nota:100},
+]
+
+const nota= notas.find(alumno=>alumno.nota>80)
+console.log(nota);
+//! findIndex
+
+let names1 = ['Elias','Nicolas','Leonid','Alejan'];
+const resultado=names1.findIndex(name=>name.length > 7)
+console.log(resultado);
+
+//! some
+let names2 = ['Elias','Nicolas','Leonid','Alejan'];
+const booleanos=[false,false,false, true]
+const algunoBooleano=booleanos.some(b=> b===true)
+console.log(algunoBooleano);
+ const todosNombres=names2.some(name=> typeof name==='number')
+ console.log(todosNombres);
+ //! sort
+ let products=['Milk','Coffe','Sugar','Apple']
+ console.log(products.sort());
+ 
+ const numbers123=[9.81,3.14,100,37]
+
+ console.log(numbers123.sort((a,b)=> a-b));
+ console.log(numbers123.sort((a,b)=> b-a));
+ const usuarios=[
+     {nombre:'Elias', edad:150},
+     {nombre:'Nicolas', edad:50},
+     {nombre:'Leonidas', edad:100},
+     {nombre:'Mathias', edad:22},
+ ]
+usuarios.sort((a,b)=>{
+    if(a.edad < b.edad) return -1
+    if(a.edad > b.edad) return 1
+    return 0
+})
+console.log(usuarios);

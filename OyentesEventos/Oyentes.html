@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="clickMe()"> Click Me 1</button>
+    <button id="btn1"> Click Me 2</button>
+    <button id="btn2"> Click Me 3</button>
+    <h1> INDICE DE MASA </h1>
+    <input type="text" id="peso" placeholder="peso en K">
+    <input type="text" id="altura" placeholder="Altura en m">
+    <button id="Calcula">Calcula  Indice de peso</button>
+    <script>
+        let peso=document.querySelector('#peso')
+        let altura=document.querySelector('#altura')
+        let buton=document.querySelector('#Calcula')
+
+        buton.addEventListener('click',()=>{
+            let indiceMasa= peso.value / altura.value **2 
+            alert(`Tu indice de peso es  ${indiceMasa.toFixed(2)}`)
+            console.log(indiceMasa);
+        })
+
+
+        
+        // click
+        // let buton=document.querySelector('#btn')
+        // buton.addEventListener('click', e=>{
+            //     console.log('e ', e)
+            //     console.log('e target', e.target)
+            //     console.log('e target textContent', e.target.textContent)
+            // })
+        // doble click
+        const clickMe=()=>{
+            alert('Hemos hecho Click')
+        }
+        let buton1=document.querySelector('#btn1')
+        buton1.addEventListener('dblclick',e=>{
+            console.log('e ', e)
+            console.log('e target', e.target)
+            console.log('e target textContent', e.target.textContent)
+        })   
+        
+        // mouseenter
+        
+        let buton2=document.querySelector('#btn2')
+        buton2.addEventListener('mouseenter',e=>{
+            console.log('e ', e)
+            console.log('e target', e.target)
+            console.log('e target textContent', e.target.textContent)
+        })   
+        document.body.addEventListener('keypress', e=>{
+            alert(e.keyCode)
+        })
+    </script>
+</body>
+</html>
